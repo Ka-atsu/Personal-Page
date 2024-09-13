@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="Logo">
+            <img src="logo.png"> 
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about" >ABOUT</a>
+            <a href="#skills" >SKILLS</a>
+            <a href="#contact" >CONTACT</a>
+        </div>
+    </div>
+
+    <section id="home" class="homeTab">
+        <div class="homeName">
+            <h2>Hello I'm Kent Tallafer</h2>
+            <h1>A PNC student</h1>
+        </div>
+        <div class="homeImg">
+            <img src="profile.png"> 
+        </div>
+    </section>
+
+    <section id="about" class="aboutTab">
+        <h1>ABOUT</h1>
+        <p>I have a strong desire to become proficient in programming and gain extensive knowledge in the field of technology. <br> 
+            I enjoy learning new things and improving myself, whether it's through taking on challenging projects or learning a new language. <br> 
+            When I'm not coding, I like to play video games to relax. <br> 
+            I find that playing video games is a pleasant and engaging way to unwind and discover new worlds. <br> 
+            My passion for gaming and my love of programming go hand in hand to keep me inspired and motivated in both my personal and professional lives. 
+        </p>
+    </section>
+    <section id="skills" class="skillsTab">
+        <h1>SKILLS</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVA</li>
+            <li>C#</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+    <section id="contact" class="contactTab">
+        <form class="Contact" onsubmit="return validateForm()">
+            <h1>CONTACT</h1>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email"><br>
+            <label for="message">Message:</label>
+            <textarea id="message"name="message" form="Contact"></textarea>
+            <button class="submit" id="alertButton" onclick="showAlert()">Click Me</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
